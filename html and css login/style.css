@@ -1,0 +1,114 @@
+@import url("C:\Users\RAHUL H B\Downloads\novalion-font\Novaliondemo-0WVdG.ttf");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(-30deg,#d9e410 0%,#2ab918 50%,#10e481 50%,#fd1d1d 100%);
+    animation: animate 10s linear infinite;
+    filter: hue-rotate(120deg);
+}
+@keyframes animate
+{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.first{
+    position: relative;
+    background: rgba(147, 176, 119,0.5);
+    width: 380px;
+    height: 420px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 6px;
+    color: white;
+    box-shadow: rgba(0,0,0,0.1);
+    border:3px solid rgba(0,0,0,0.1);
+}
+.first::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 6px;
+    pointer-events: none;
+    background: linear-gradient(to bottom,rgba(147, 176, 119,0.5) 0%,rgba(147, 176, 119,0.5)15%,,tansparent 80%,
+    rgba(147, 176, 119,0.5)100%); 
+}
+h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600px;
+}
+.second{
+    position: relative;
+    width: 100%;
+}
+form{
+    position: relative;
+    width: 100%;
+
+}
+.user{
+    width: 100%;
+    margin-top: 30px;
+}
+.user input{
+    height: 40px;
+    width: 100%;
+    border-radius: 3px;
+    border:1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 4px;
+    background: rgba(0,0,0,0.1);
+}
+.pass input{
+    height: 40px;
+    width: 100%;
+    border-radius: 3px;
+    border:none;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 4px;
+    background: rgba(0,0,0,0.1);
+    border:1px solid rgba(0,0,0,0.1);
+    margin-top: 25px;
+}
+.remeber{
+    font-size:18px;
+    color: black;
+}
+.login input{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    border:none;
+    border:1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 4px;
+    background: rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+input:hover{
+    background: white;
+}
+p{
+    padding:4px;
+    margin-top: 12px;
+    color: white;
+}
